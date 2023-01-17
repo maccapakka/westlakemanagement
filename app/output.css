@@ -927,4 +927,8 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .lg\:leading-tight {
+    line-height: 1.25;
+  }
 }

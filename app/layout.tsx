@@ -175,7 +175,8 @@ export default function RootLayout({
             ))}
           </div>
           <div className="container max-w-[1124px] mx-auto px-4 py-12 text-slate-400 border-t border-slate-800 text-sm">
-            Copyright &copy; {new Date().getFullYear()}. All Rights Reserved.
+            Copyright &copy; {new Date().getFullYear()} Westlake Management. All
+            Rights Reserved.
           </div>
         </footer>
       </body>

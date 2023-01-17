@@ -36,7 +36,7 @@ export default function Home() {
         }}
       >
         <div className="p-10 text-white space-y-3 lg:w-3/4 self-end">
-          <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl lg:text-5xl font-bold lg:leading-tight">
             <span className="font-normal">The UK’s Leading Authority in </span>
             Conflict Management & Physical Intervention{" "}
             <span className="font-normal">Training.</span>
