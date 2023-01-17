@@ -1,91 +1,79 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "@next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
+
+const footerContent = [
+  {
+    title: "Training",
+    image: "/training.jpeg",
+    content:
+      "We provide a range of training in addition to our conflict management ranging from stress management and bereavement to breakaway personal protection. We aim to...",
+  },
+  {
+    title: "Advice and Support",
+    image: "/support.jpeg",
+    content:
+      "If you dont have time to attend one of our in depth training courses some quick guides that you might find useful. Report Writing  Safety...",
+  },
+  {
+    title: "About Us",
+    image: "/about.jpeg",
+    content:
+      "All training is bespoke and written with and for you. Training is constantly monitored and updated with research and ongoing evaluation to ensure best value...",
+  },
+];
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <div className="container mx-auto px-4 max-w-[1124px]">
+      <div
+        className="rounded bg-overlay bg-cover min-h-[500px] flex"
+        style={{
+          //@ts-ignore-next-line
+          "--overlay-image": "url('/hero.jpeg')",
+          "--overlay-colors": "rgba(0, 0, 0, .7), rgba(0, 0, 0, .2)",
+        }}
+      >
+        <div className="p-10 text-white space-y-3 lg:w-3/4 self-end">
+          <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
+            <span className="font-normal">The UK’s Leading Authority in </span>
+            Conflict Management & Physical Intervention{" "}
+            <span className="font-normal">Training.</span>
+          </h1>
+          <p>
+            Westlake supplies high quality training to staff at risk in the
+            public and voluntary sector, industry, education, medical and
+            housing.
+          </p>
+          <p className="font-semibold">
+            Detect, Deter, Defend, Depart from Danger
+          </p>
+        </div>
+      </div>
+      <div className="grid grid-flow-row lg:grid-flow-col gap-8 mt-2 py-12">
+        {footerContent.map((i) => (
+          <div className="grid grid-flow-row gap-4 relative" key={i.title}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
+              className="object-cover rounded block w-auto h-[260px]"
+              src={i.image}
+              width="300"
+              height="300"
               priority
+              alt={i.title}
             />
-          </a>
-        </div>
+            <div className="grid grid-flow-row gap-2 lg:gap-4">
+              <h2 className="text-2xl text-slate-900 font-semibold">
+                {i.title}
+              </h2>
+              <p>{i.content}</p>
+              <a className="inline-block text-blue-500 font-semibold" href="/">
+                Read More...
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
