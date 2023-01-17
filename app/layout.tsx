@@ -1,87 +1,8 @@
-import Image from "next/image";
-import { MyPopover } from "./Popover";
+import { Header } from "./Header";
+import { navigationItems as footerNav } from "./navigationItems";
 
 import "./globals.css";
 import Link from "next/link";
-
-const footerNav = [
-  {
-    title: "Conflict Management",
-    items: [
-      {
-        name: "Transactional Analysis",
-        link: "transactional-analysis",
-      },
-      {
-        name: "Verbal Aggression",
-        link: "verbal-aggression",
-      },
-    ],
-  },
-  {
-    title: "Training",
-    items: [
-      {
-        name: "Armed Self Defence",
-        link: "armed-self-defence",
-      },
-      {
-        name: "Breakaway Personal Protection",
-        link: "breakaway-personal-protection",
-      },
-      {
-        name: "Armed Robbery Safety",
-        link: "armed-robbery-safety",
-      },
-      {
-        name: "Physical Intervention",
-        link: "physical-intervention",
-      },
-      {
-        name: "Health & Safety",
-        link: "health-and-safety",
-      },
-      {
-        name: "Stress Awareness",
-        link: "stress-awareness",
-      },
-    ],
-  },
-  {
-    title: "Advice & Support",
-    items: [
-      {
-        name: "Report Writing",
-        link: "report-writing",
-      },
-      {
-        name: "Safety Measures in the Workplace",
-        link: "safety-measures-in-the-workplace",
-      },
-    ],
-  },
-  {
-    title: "About Us",
-    items: [
-      {
-        name: "Profile",
-        link: "profile",
-      },
-      {
-        name: "Our Promises",
-        link: "our-promises",
-      },
-      {
-        name: "Biography",
-        link: "biography",
-      },
-      {
-        name: "FAQs",
-        link: "faqs",
-      },
-    ],
-  },
-];
 
 const navigationItems = [
   {
@@ -112,48 +33,7 @@ export default function RootLayout({
       <head />
       <body>
         <div className="px-4">
-          <header className="container mx-auto max-w-[1124px] py-8 flex">
-            <Link href="/" className="grow">
-              <Image
-                className="grow"
-                src="/logo.gif"
-                width="220"
-                height="77"
-                alt="Westlake Brand Logo"
-                priority
-              />
-            </Link>
-            <nav className="grow space-x-6 self-center text-right text-md font-semibold">
-              <div className="hidden lg:block">
-                {footerNav.map((item) => (
-                  <div key={item.title} className="group inline-block relative">
-                    <button className="hover:text-slate-900 font-semibold py-2 px-4 gap-2 inline-flex items-center">
-                      <span>{item.title}</span>
-                      <svg
-                        className="fill-current h-4 w-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                      </svg>
-                    </button>
-                    <ul className="absolute bg-white shadow-lg rounded-md hidden text-blue-500 pt-1 group-hover:block w-[250px] divide-y overflow-hidden">
-                      {item.items.map((k, i) => (
-                        <li key={k.name} className="hover:bg-slate-100">
-                          <Link
-                            className="p-3 block whitespace-no-wrap font-normal text-slate-600 text-left text-sm"
-                            href={k.link}
-                          >
-                            {k.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </nav>
-          </header>
+          <Header />
         </div>
         <main>{children}</main>
         <footer className="bg-slate-900">

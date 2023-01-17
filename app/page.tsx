@@ -7,18 +7,21 @@ const footerContent = [
   {
     title: "Training",
     image: "/training.jpeg",
+    link: "/training",
     content:
       "We provide a range of training in addition to our conflict management ranging from stress management and bereavement to breakaway personal protection. We aim to...",
   },
   {
     title: "Advice and Support",
     image: "/support.jpeg",
+    link: "/advice-and-support",
     content:
       "If you dont have time to attend one of our in depth training courses some quick guides that you might find useful. Report Writing  Safety...",
   },
   {
     title: "About Us",
     image: "/about.jpeg",
+    link: "/profile",
     content:
       "All training is bespoke and written with and for you. Training is constantly monitored and updated with research and ongoing evaluation to ensure best value...",
   },
@@ -72,7 +75,7 @@ export default function Home() {
               <p>{i.content}</p>
               <Link
                 className="inline-block text-blue-500 font-semibold"
-                href="/"
+                href={i.link}
               >
                 Read More...
               </Link>
