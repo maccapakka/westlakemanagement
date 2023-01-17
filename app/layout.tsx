@@ -2,6 +2,7 @@ import Image from "next/image";
 import { MyPopover } from "./Popover";
 
 import "./globals.css";
+import Link from "next/link";
 
 const footerNav = [
   {
@@ -112,7 +113,7 @@ export default function RootLayout({
       <body>
         <div className="px-4">
           <header className="container mx-auto max-w-[1124px] py-8 flex">
-            <a href="/" className="grow">
+            <Link href="/" className="grow">
               <Image
                 className="grow"
                 src="/logo.gif"
@@ -121,7 +122,7 @@ export default function RootLayout({
                 alt="Westlake Brand Logo"
                 priority
               />
-            </a>
+            </Link>
             <nav className="grow space-x-6 self-center text-right text-md font-semibold">
               <div className="hidden lg:block">
                 {footerNav.map((item) => (
@@ -139,12 +140,12 @@ export default function RootLayout({
                     <ul className="absolute bg-white shadow-lg rounded-md hidden text-blue-500 pt-1 group-hover:block w-[250px] divide-y overflow-hidden">
                       {item.items.map((k, i) => (
                         <li key={k.name} className="hover:bg-slate-100">
-                          <a
+                          <Link
                             className="p-3 block whitespace-no-wrap font-normal text-slate-600 text-left text-sm"
                             href={k.link}
                           >
                             {k.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -163,13 +164,13 @@ export default function RootLayout({
                   {c.title}
                 </h3>
                 {c.items.map((k, i) => (
-                  <a
+                  <Link
                     className="block text-slate-400 hover:text-slate-300"
                     key={k.name}
                     href={k.link}
                   >
                     {k.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             ))}

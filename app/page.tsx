@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import Link from "next/link";
 
 export const revalidate = 60;
 
@@ -70,9 +70,12 @@ export default function Home() {
                 {i.title}
               </h2>
               <p>{i.content}</p>
-              <a className="inline-block text-blue-500 font-semibold" href="/">
+              <Link
+                className="inline-block text-blue-500 font-semibold"
+                href="/"
+              >
                 Read More...
-              </a>
+              </Link>
             </div>
           </div>
         ))}

@@ -1,6 +1,7 @@
 "use client";
 
 import { Popover } from "@headlessui/react";
+import Link from "next/link";
 
 export function MyPopover({
   text,
@@ -16,9 +17,9 @@ export function MyPopover({
       <Popover.Panel className="absolute z-10">
         <div className="grid grid-cols-2">
           {items.map((i) => (
-            <a key={i.name} href={i.link}>
+            <Link key={i.name} href={i.link}>
               {i.name}
-            </a>
+            </Link>
           ))}
         </div>
       </Popover.Panel>
