@@ -126,7 +126,7 @@ export default function RootLayout({
               <div className="hidden lg:block">
                 {footerNav.map((item) => (
                   <div key={item.title} className="group inline-block relative">
-                    <button className="text-blue-500 font-semibold py-2 px-4 gap-2 inline-flex items-center">
+                    <button className="hover:text-slate-900 font-semibold py-2 px-4 gap-2 inline-flex items-center">
                       <span>{item.title}</span>
                       <svg
                         className="fill-current h-4 w-4"
