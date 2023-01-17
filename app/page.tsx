@@ -53,7 +53,10 @@ export default function Home() {
       </div>
       <div className="grid grid-flow-row lg:grid-flow-col gap-8 mt-2 py-12">
         {footerContent.map((i) => (
-          <div className="grid grid-flow-row gap-4 relative" key={i.title}>
+          <div
+            className="grid grid-flow-row content-start gap-4 relative"
+            key={i.title}
+          >
             <Image
               className="object-cover rounded block w-auto h-[260px]"
               src={i.image}
