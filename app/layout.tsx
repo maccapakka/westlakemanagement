@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import Header from "./Header";
 import { navigationItems as footerNav } from "./navigationItems";
 
 import "./globals.css";
