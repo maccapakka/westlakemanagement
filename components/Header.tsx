@@ -59,6 +59,7 @@ export const Header = () => {
                       <Link
                         key={k.name}
                         href={k.link}
+                        onClick={() => setIsNavOpen(false)}
                         className="block rounded-lg py-2 px-3 hover:bg-slate-100"
                       >
                         {k.name}
