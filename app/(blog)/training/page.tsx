@@ -3,6 +3,36 @@ import Link from "next/link";
 export default function Training() {
   return (
     <>
+      <h2 className="text-3xl font-semibold text-slate-900">
+        Conflict Management
+      </h2>
+      <p>
+        More and more of our workforce are facing verbal assault on a daily
+        basis – whilst just doing their job. We all think of the easy example
+        like traffic wardens – but what about nurses, doctors, call centre
+        staff, teachers….the list is endless.
+      </p>
+      <p>
+        The conflict management course puts violence into perspective and
+        explains the triggers that can start an incident. In hindsight
+        flashpoints could often have been predicted if we only knew the signs.
+      </p>
+      <p>
+        If a member of staff is being abused we teach how that employee can
+        dissolve the aggression and should the situation deteriorate, extricate
+        themselves from a verbal or violent and at the very least, upsetting
+        situation.
+      </p>
+      <p>
+        Verbal assault can have a greater impact upon you than physical assault.
+        Physical attacks bring sympathy and understanding, whilst verbal attacks
+        just leave the victim being told “Ignore it – it meant nothing” – not
+        easy to do when you are on the receiving end.
+      </p>
+      <p>
+        Learn the skills to turn anger into positive action and stop your staff
+        being verbally assaulted.
+      </p>
       <h2 className="text-3xl font-semibold text-slate-900">Training</h2>
       <p>
         We provide a range of training in addition to our conflict management

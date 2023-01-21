@@ -5,7 +5,7 @@ export const revalidate = 60;
 
 const footerContent = [
   {
-    title: "Training",
+    title: "Conflict Management & Training",
     image: "/training.jpeg",
     link: "/training",
     content:
@@ -16,7 +16,7 @@ const footerContent = [
     image: "/support.jpeg",
     link: "/advice-and-support",
     content:
-      "If you dont have time to attend one of our in depth training courses some quick guides that you might find useful. Report Writing  Safety...",
+      "If you don't have time to attend one of our in depth training courses some quick guides that you might find useful. Report Writing  Safety...",
   },
   {
     title: "About Us",
@@ -54,7 +54,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="grid grid-flow-row lg:grid-flow-col gap-8 mt-2 py-12">
+      <div className="grid grid-flow-row lg:grid-flow-col lg:grid-cols-3 gap-8 mt-2 py-12">
         {footerContent.map((i) => (
           <div
             className="grid grid-flow-row content-start gap-4 relative"
