@@ -5,8 +5,8 @@ export default function SafetyMeasures() {
     <>
       <h2 className="text-3xl font-semibold text-slate-900">Get in Touch</h2>
       <p>
-        If you are in your organisation is in need of conflict management
-        training you can get in touch via the below
+        If your organisation is in need of conflict management training you can
+        get in touch via the methods below
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
