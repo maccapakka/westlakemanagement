@@ -19,11 +19,7 @@ export default function OurPromises() {
       <h3 className="text-xl text-slate-900">
         Westlake promise the following:
       </h3>
-      <ol className="list-decimal list-inside space-y-3">
-        <li>
-          All courses are certificated, and certificates will be with you in
-          seven days.
-        </li>
+      <ol className="list-disc list-inside space-y-3">
         <li>Your course will be bespoke to your organisation.</li>
         <li>
           The cost price agreed upon is final – there are no mileage rates,
@@ -35,9 +31,7 @@ export default function OurPromises() {
           etc please ask – they are free of charge.
         </li>
         <li>All courses have consistent trainers who are well briefed.</li>
-        <li>
-          All courses will be analysed for effectiveness and reports provided.
-        </li>
+        <li>Courses can be analysed for effectiveness and reports provided.</li>
         <li>
           You will not be nagged on the phone – tell us when to contact you and
           we will.
@@ -46,7 +40,10 @@ export default function OurPromises() {
         <li>
           If we say we will do something – we do it. On time to specification.
         </li>
-        <li>Our advice and support is FREE – just ask.</li>
+        <li>
+          Our advice and support is <span className="font-bold">FREE</span> –
+          just ask.
+        </li>
       </ol>
       <p className="text-slate-900 font-bold">
         If something you want is not on this list – please ask

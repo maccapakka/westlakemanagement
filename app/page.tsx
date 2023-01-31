@@ -83,6 +83,9 @@ export default function Home() {
           </div>
         ))}
       </div>
+      <div className="mb-10 text-center border-t pt-10">
+        All training is Bespoke – written with and for your organisation.
+      </div>
     </div>
   );
 }

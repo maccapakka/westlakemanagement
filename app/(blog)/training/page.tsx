@@ -50,14 +50,6 @@ export default function Training() {
         <li>
           <Link
             className="text-blue-500 hover:text-blue-400"
-            href="/armed-self-defence"
-          >
-            Armed Self Defence
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="text-blue-500 hover:text-blue-400"
             href="/breakaway-personal-protection"
           >
             Breakaway Personal Protection Safety
@@ -66,17 +58,17 @@ export default function Training() {
         <li>
           <Link
             className="text-blue-500 hover:text-blue-400"
-            href="/armed-robbery-safety"
+            href="/physical-intervention"
           >
-            Armed Robbery Safety
+            Physical Intervention
           </Link>
         </li>
         <li>
           <Link
             className="text-blue-500 hover:text-blue-400"
-            href="/physical-intervention"
+            href="/armed-robbery-safety"
           >
-            Physical Intervention
+            Armed Robbery Safety
           </Link>
         </li>
         <li>
@@ -93,6 +85,14 @@ export default function Training() {
             href="/stress-awareness"
           >
             Stress Awareness
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="text-blue-500 hover:text-blue-400"
+            href="/armed-self-defence"
+          >
+            Armed Self Defence
           </Link>
         </li>
       </ul>

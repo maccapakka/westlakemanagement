@@ -10,26 +10,26 @@ export const navigationItems = [
         name: "Verbal Aggression",
         link: "verbal-aggression",
       },
+      {
+        name: "Telephone Aggression",
+        link: "telephone-aggression",
+      },
     ],
   },
   {
     title: "Training",
     items: [
       {
-        name: "Armed Self Defence",
-        link: "armed-self-defence",
-      },
-      {
         name: "Breakaway Personal Protection",
         link: "breakaway-personal-protection",
       },
       {
-        name: "Armed Robbery Safety",
-        link: "armed-robbery-safety",
-      },
-      {
         name: "Physical Intervention",
         link: "physical-intervention",
+      },
+      {
+        name: "Armed Robbery Safety",
+        link: "armed-robbery-safety",
       },
       {
         name: "Health & Safety",
@@ -38,6 +38,10 @@ export const navigationItems = [
       {
         name: "Stress Awareness",
         link: "stress-awareness",
+      },
+      {
+        name: "Armed Self Defence",
+        link: "armed-self-defence",
       },
     ],
   },
@@ -72,6 +76,15 @@ export const navigationItems = [
       {
         name: "FAQs",
         link: "faqs",
+      },
+    ],
+  },
+  {
+    title: "Contact",
+    items: [
+      {
+        name: "Get in touch",
+        link: "contact",
       },
     ],
   },

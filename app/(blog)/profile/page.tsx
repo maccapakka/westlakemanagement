@@ -3,6 +3,9 @@ export default function Profile() {
     <>
       <h2 className="text-3xl font-semibold text-slate-900">Profile</h2>
       <p>
+        Westlake has provided bespoke, high quality training for over 20 years.
+      </p>
+      <p>
         All training is bespoke and written with and for you. Training is
         constantly monitored and updated with research and ongoing evaluation to
         ensure Best Value.

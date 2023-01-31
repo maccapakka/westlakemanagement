@@ -6,7 +6,7 @@ export default function SafetyMeasures() {
       <h2 className="text-3xl font-semibold text-slate-900">
         Safety Measures in the Workplace
       </h2>
-      <ol className="list-decimal list-inside">
+      <ol className="list-disc list-inside">
         <li>Consider the layout office, and how you can make a quick exit.</li>
         <li>
           Position the visitor in a position where they are not between yourself
